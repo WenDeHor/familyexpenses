@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 
 
 @Service
-public class SignUpServiceImpl implements SingUpService {
+public class SignUpServiceImpl implements SignUpService {
 
     private final UserRepository usersRepository;
 
@@ -23,7 +23,7 @@ public class SignUpServiceImpl implements SingUpService {
     }
 
     @Override
-    public void singUp(UserForm userForm) {
+    public void signUp(UserForm userForm) {
         String hashPassword = passwordEncoder.encode(userForm.getPassword());
 
         User user = User.builder()

@@ -20,6 +20,8 @@ public class Weather {
     private Long idWeather;
     @Column(name = "number")
     private String number;
+    @Column(name = "day")
+    private String day;
     @Column(name = "month")
     private String month;
     @Column(name = "linkHref")

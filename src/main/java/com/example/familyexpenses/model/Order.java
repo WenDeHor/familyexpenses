@@ -12,6 +12,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.Date;
 
 @Data
 @AllArgsConstructor
@@ -23,19 +24,23 @@ public class Order {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "orders_id")
-    private Long idOrders;
+    @Column(name = "id")
+    private Long id;
 
-    @Column(name = "date_time", nullable = false)
-    @NotNull
-    private LocalDate dateTime;
+    @Column(name = "username")
+    private String username;
 
-    @Column(name = "description")
-    @Size(min = 0, max = 500)
-    private String description; // опис
+    @Column(name = "phone")
+    private String phone;
 
-    @Column(name = "money")
-    private Integer money;
+    @Column(name = "text")
+    private String text;
+
+    @Column(name = "date")
+    private Date date;
+
+    @Column(name = "bonus")
+    private String bonus;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id", nullable = false)

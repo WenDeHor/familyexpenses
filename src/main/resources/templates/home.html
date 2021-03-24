@@ -4,8 +4,8 @@
     <title th:text="${title}"></title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <!--    CSS-->
-<!--    <link rel="stylesheet" href="../static/css/mine.css">-->
-    <link rel="stylesheet" href="../static/css/style.css">
+    <!--    <link rel="stylesheet" href="../static/css/mine.css">-->
+    <!--    <link rel="stylesheet" href="../static/css/style.css">-->
 
     <!-- CSS only -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -22,12 +22,52 @@
             integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
             crossorigin="anonymous"></script>
     <script type="text/javascript" src="blocks/js/script.js"></script>
-<script src="js/jquery.vide.min.js"></script>
+
 </head>
 
+<br>
 <header th:insert="blocks/heder-mine::header-mine"></header>
 <br>
-<header th:insert="blocks/photoSlider::slider"></header>
+<div class="text-center">
+    <img src="images/fone.jpg" class="img-fluid" alt="Responsive image">
+</div>
+<section class="pt-4 pt-md-11">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-7 col-lg-6 order-md-2">
+
+                <!-- Image -->
+                <img src="images/n1.jpg" class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0 aos-init aos-animate"
+                     alt="..." data-aos="fade-up" data-aos-delay="100">
+
+            </div>
+            <div class="col-12 col-md-5 col-lg-6 order-md-1 aos-init aos-animate" data-aos="fade-up">
+
+                <!-- Heading -->
+                <h1 class="display-3 text-center text-md-left">
+                    Welcome to <span class="text-primary">Landkit</span>. <br>
+                    Develop anything.
+                </h1>
+
+                <!-- Text -->
+                <p class="lead text-center text-md-left text-muted mb-6 mb-lg-8">
+                    Build a beautiful, modern website with flexible Bootstrap components built from scratch.
+                </p>
+
+                <!-- Buttons -->
+                <div class="text-center text-md-left">
+                    <a href="overview.html" class="btn btn-primary shadow lift mr-1">
+                        View all pages <i class="fe fe-arrow-right d-none d-md-inline ml-3"></i>
+                    </a>
+                    <a href="docs/index.html" class="btn btn-primary-soft lift">
+                        Documentation
+                    </a>
+                </div>
+
+            </div>
+        </div> <!-- / .row -->
+    </div> <!-- / .container -->
+</section>
 
 <br>
 
